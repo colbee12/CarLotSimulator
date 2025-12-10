@@ -29,7 +29,7 @@ namespace CarLotSimulator
             carOne.MakeEnginNoise("vroom");
 
             carLotOne.ParkingLot.Add(carOne);
-            
+            Console.WriteLine($"the number of cars in the lot is: {CarLot.numberOfCars}");
             ///////////////////////////////
 
             var carTwo = new Car()
@@ -43,8 +43,7 @@ namespace CarLotSimulator
             carTwo.MakeEnginNoise("vroom Vroom");
             
             carLotOne.ParkingLot.Add(carTwo);
-            
-            
+            Console.WriteLine($"the number of cars in the lot is: {CarLot.numberOfCars}");
             
             ////////////////////////////////////
 
@@ -54,7 +53,7 @@ namespace CarLotSimulator
             carThree.MakeEnginNoise("Roar");
             
             carLotOne.ParkingLot.Add(carThree);
-            
+            Console.WriteLine($"the number of cars in the lot is: {CarLot.numberOfCars}");
             //*************BONUS X 2*************//
 
             //Create a CarLot class
@@ -63,6 +62,9 @@ namespace CarLotSimulator
             //At the end iterate through the list printing each of car's Year, Make, and Model to the console
             
             carLotOne.CheckCars();
+            
+           
+            
         }
     }
 }

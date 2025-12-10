@@ -29,10 +29,10 @@ public class Car
         Console.WriteLine($"{Make} {Model} has an engin noise that sounds like {HonkNoise}");
     }
 
-
+     // default constructor
     public Car()
     {
-        
+        CarLot.numberOfCars++;
     }
 
 
@@ -43,6 +43,7 @@ public class Car
         Model = modle;
         Year = year;
         IsDriveable = isDriveable;
+        CarLot.numberOfCars++;
     }
 }
 
